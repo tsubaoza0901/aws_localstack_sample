@@ -12,3 +12,7 @@ services:
       - DATA_DIR=/tmp/localstack/data
     volumes:
       - /Users/t.ozawa/.localstack:/tmp/localstack/
+    networks:
+      - s3-localstack
+networks:
+  s3-localstack:
